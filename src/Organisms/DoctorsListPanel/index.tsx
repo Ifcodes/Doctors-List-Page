@@ -3,7 +3,7 @@ import SearchBox from "../../Atoms/SearchBox";
 import { H1 } from "../../Atoms/Typography";
 import { doctorsListEntity, setDoctorsList } from "../../Entity";
 import Table from "../../Molecule/Table";
-import TableMobile from "../../Molecule/Table/tableMobile";
+
 import { services } from "../../Services";
 import { DoctorsListWrapper } from "./doctorsListPanelStyles";
 
@@ -58,7 +58,6 @@ const DoctorsListPanel = () => {
         tableData={tableData}
         errorMessage={error}
       />
-      <TableMobile />
     </DoctorsListWrapper>
   );
 };
