@@ -33,12 +33,10 @@ const DoctorsListPanel = () => {
           setDoctorsList(res);
         })
         .catch((error) => {
-          console.log({ error: error.message });
           setError(error.message);
         });
     } catch (error) {
       console.log({ error });
-      setError("error");
     }
   }, []);
 
