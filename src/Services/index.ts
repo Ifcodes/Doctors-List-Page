@@ -9,8 +9,9 @@ const getDoctorList = async () => {
 };
 
 const postDoctor = async (data: any) => {
- const response = await axios.get(baseUrl, data);
- return response;
+  const response = await axios.post(baseUrl, data);
+  console.log(response);
+  return response;
 };
 
 export const services = {

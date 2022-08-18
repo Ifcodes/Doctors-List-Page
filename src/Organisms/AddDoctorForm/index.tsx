@@ -58,6 +58,8 @@ const AddDoctorForm = () => {
         city: "",
         website: "",
       });
+
+      // console.log(res);
     });
   };
 
