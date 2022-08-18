@@ -7,17 +7,6 @@ import TableMobile from "../../Molecule/Table/tableMobile";
 import { services } from "../../Services";
 import { DoctorsListWrapper } from "./doctorsListPanelStyles";
 
-const data = Array(20)
-  .fill("")
-  .map((_, index) => ({
-    name: "Jalasem Ajala",
-    username: "kagasta",
-    email: "emai@gmail.com",
-    address: { street: "home", suite: "fatom", city: "calc" },
-    phone: "08102228633",
-    website: "website.com",
-  }));
-
 const DoctorsListPanel = () => {
   const [searchField, setSearchField] = useState("");
   const [page, setPage] = useState(1);
